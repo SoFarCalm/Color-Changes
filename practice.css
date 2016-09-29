@@ -1,13 +1,12 @@
-
-p {
+#secret {
   font-size: 35px;
   margin: 5px 0 0 0;
-  color: white;
-  display: inline-block;
+  visibility: hidden;
 }
 
 #toggle {
   font-size: 30px;
+  cursor: pointer;
 }
 #menu {
   overflow-x: hidden;
@@ -79,16 +78,16 @@ p {
   box-shadow: 6px 6px 6px black;
   width: 150px;
   height: 50px;
-  display: none;
   text-align: center;
   font-size: 40px;
   color: black;
-  cursor: hand; cursor: pointer;
+  cursor: pointer;
   margin-top: 5px;
+  visibility: hidden;
 }
 
 #dubai {
-  margin-left: 1450px;
+  margin-left: 3000px;
 }
 
 #dubai.show {

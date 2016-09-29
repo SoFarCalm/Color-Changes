@@ -8,6 +8,7 @@ var box4 = document.getElementById('box4');
 var box5 = document.getElementById('box5');
 var surprise = document.getElementById('surprise')
 var img = document.getElementById('dubai');
+var secret = document.getElementById('secret');
 
 toggle.addEventListener('click', function show1() {
   if (body.classList.contains('menu-open')) {
@@ -36,22 +37,27 @@ function changeColor() {
   var box = document.getElementById(boxId);
   if (box.classList.contains('color1')) {
     body.style.backgroundColor = 'red';
-    surprise.style.display = 'inline-block';
+    surprise.style.visibility = 'hidden';
+    secret.style.visibility = 'hidden';
   }
   else if (box.classList.contains('color2')) {
             body.style.backgroundColor = 'blue';
-            surprise.style.display = 'inline-block';
+            surprise.style.visibility = 'hidden';
+            secret.style.visibility = 'hidden';
   }
   else if (box.classList.contains('color3')) {
             body.style.backgroundColor = 'green';
-            surprise.style.display = 'inline-block';
+            surprise.style.visibility = 'hidden';
+            secret.style.visibility = 'hidden';
   }
   else if (box.classList.contains('color4')) {
             body.style.backgroundColor = 'orange'
-            surprise.style.display = 'inline-block';
+            surprise.style.visibility = 'visible';
+            secret.style.visibility = 'visible';
   } else {
             body.style.backgroundColor = 'white';
-            surprise.style.display = 'none';
+            surprise.style.visibility = 'hidden';
+            secret.style.visibility = 'hidden';
   }
 }
 
