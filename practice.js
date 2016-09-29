@@ -11,14 +11,13 @@ var img = document.getElementById('dubai');
 var secret = document.getElementById('secret');
 
 toggle.addEventListener('click', function show1() {
+  // toggle body
   if (body.classList.contains('menu-open')) {
       body.classList.remove('menu-open');
   } else {
       body.classList.add('menu-open');
   }
-});
-
-toggle.addEventListener('click', function show2() {
+  // toggle menu
   if (menu.classList.contains('menu-open')) {
       menu.classList.remove('menu-open');
   } else {
