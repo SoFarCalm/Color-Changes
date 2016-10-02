@@ -26,32 +26,33 @@ for ( i = 0; i < boxes.length; i++) {
   box.addEventListener('click', changeColor);
 }
 
-function changeColor() {
-  var boxId = this.attributes["data-box"].value;
-  var box = document.getElementById(boxId);
+function changeColor(event) {
+  // uncomment this to see everything in the event
+  // console.log(event);
+  var box = event.target;
   if (box.classList.contains('color1')) {
     body.style.backgroundColor = 'red';
     found.style.visibility = 'hidden';
     surprise.style.visibility = 'hidden';
   }
   else if (box.classList.contains('color2')) {
-            body.style.backgroundColor = 'blue';
-            found.style.visibility = 'hidden';
-            surprise.style.visibility = 'hidden';
+    body.style.backgroundColor = 'blue';
+    found.style.visibility = 'hidden';
+    surprise.style.visibility = 'hidden';
   }
   else if (box.classList.contains('color3')) {
-            body.style.backgroundColor = 'green';
-            found.style.visibility = 'hidden';
-            surprise.style.visibility = 'hidden';
+    body.style.backgroundColor = 'green';
+    found.style.visibility = 'hidden';
+    surprise.style.visibility = 'hidden';
   }
   else if (box.classList.contains('color4')) {
-            body.style.backgroundColor = 'orange'
-            found.style.visibility = 'visible';
-            surprise.style.visibility = 'visible';
+    body.style.backgroundColor = 'orange'
+    found.style.visibility = 'visible';
+    surprise.style.visibility = 'visible';
   } else {
-            body.style.backgroundColor = 'white';
-            found.style.visibility = 'hidden';
-            surprise.style.visibility = 'hidden';
+    body.style.backgroundColor = 'white';
+    found.style.visibility = 'hidden';
+    surprise.style.visibility = 'hidden';
   }
 }
 
