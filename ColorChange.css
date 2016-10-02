@@ -69,7 +69,8 @@
 
 .default {
   background-color: white;
-  margin-top: 500px;
+  bottom: 10px;
+  position: absolute;
 }
 
 #surprise {
