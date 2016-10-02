@@ -1,0 +1,102 @@
+
+#found {
+  font-size: 35px;
+  margin: 5px 0 0 0;
+  color: black;
+  visibility: hidden;
+}
+
+#toggle {
+  font-size: 30px;
+}
+#menu {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+#menu.menu-open {
+  left: 231px;
+}
+
+#menu-side.menu-open {
+  left: 0;
+}
+
+#menu-side,
+#menu {
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+#menu-side {
+  background-color: #333;
+  border-right: 1px solid black;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: -231px;
+  width: 210px;
+  height: 100%;
+  padding: 10px;
+}
+
+.box {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  padding: 0 0 0 0;
+  margin: 0 0 10px 20px;
+}
+
+.color1 {
+  background-color: red;
+}
+
+.color2 {
+  background-color: blue;
+}
+
+.color3 {
+  background-color: green;
+}
+
+.color4 {
+  background-color: orange;
+}
+
+.default {
+  background-color: white;
+  margin-top: 500px;
+}
+
+#surprise {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #4169E1;
+  box-shadow: 6px 6px 6px black;
+  width: 150px;
+  height: 50px;
+  visibility: hidden;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  cursor: hand; cursor: pointer;
+  margin-top: 5px;
+}
+
+#dubai {
+  margin-left: 1450px;
+}
+
+#dubai.show {
+  margin-left: 0;
+}
+
+#dubai {
+  -webkit-transition: 600ms ease;
+  -moz-transition: 600ms ease;
+  transition: 600ms ease;
+}
